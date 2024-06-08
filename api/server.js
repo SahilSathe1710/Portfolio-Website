@@ -25,7 +25,7 @@ app.post('/submit-form', (req, res) => {
     const query = 'INSERT INTO messages (name, email, subject, message) VALUES (?, ?, ?, ?)';
     db.query(query, [name, email, subject, message], (err, result) => {
         if (err) throw err;
-        res.redirect('http://127.0.0.1:5500/#contact'); // Redirect to the contact section
+        res.redirect('https://portfolio-website-ljn09cki6-sahilsathe1710s-projects.vercel.app/#contact'); // Redirect to the contact section
     });
 });
 
